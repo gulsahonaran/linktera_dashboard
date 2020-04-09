@@ -1,6 +1,9 @@
 # linktera_dashboard
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+First step: npm install
+Second step: npm start
+
 ## Available Scripts
 
 In the project directory, you can run:
