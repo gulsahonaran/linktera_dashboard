@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 import logo from '../../../assets/images/Linktera_Ailem_Logo.png';
-import logoBig from '../../../assets/images/Linktera_Ailem_Logo.png';
 import avatar from "../../../assets/images/avatar.png";
 
 import "./leftbar.sass";
@@ -41,7 +40,8 @@ class LeftBar extends Component {
   renderCollapse = () => {
     let collopseList = [];
     Object.keys(MENU_LIST).map((key,index) => {
-      collopseList.push(
+      return (
+        collopseList.push(
         <div className="collapse">
           <div className="collapse-header" onClick={() => this.changeTab(index)} aria-expanded={ this.state.activeTab === index } >
             <p className="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-controls="collapseOne" >
@@ -62,6 +62,7 @@ class LeftBar extends Component {
             </div>
           </div>
         </div>
+      )
       )
     });
     return collopseList;
