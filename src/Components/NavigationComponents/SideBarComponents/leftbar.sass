@@ -1,0 +1,128 @@
+.left-bar
+    width: 14.47%
+    display: flex
+    flex-direction: column
+    position: relative
+    height: 100%
+    margin: auto
+    padding: 0
+    align-items: center
+    background: linear-gradient(90deg, #009ADA, #005193)
+    box-shadow: 0px 0px 20px rgba(34, 36, 38, 0.15)
+    min-width: 210px
+    .logo-area
+        display: flex
+        margin: auto
+        img
+            width: 80%
+            display: flex
+            margin: auto
+    .avatar-area
+        display: flex
+        margin: auto
+        position: relative
+        img
+            width: 80%
+            display: flex
+            margin: auto
+        &::after
+            content: ""
+            position: absolute
+            bottom: 10px
+            right: 10px
+            border-radius: 50%
+            width: 27px
+            height: 27px
+            background: #e6f4f4
+    .info-area, .logout-area
+        display: flex
+        flex-direction: column
+        width: 90%
+        margin: auto
+        margin-left: 0
+        color: #ffffff
+        height: 95px
+        background: linear-gradient(90deg, #2eacdf, #2e7cb8)
+        p
+            font-size: 30px
+            display: flex
+            margin: auto auto 0 25px
+        small
+            font-size: 10px
+            display: flex
+            margin: 0 auto auto 25px
+    .logout-area
+        height: 64px
+        p
+            font-size: 14px
+            margin: auto 
+    .collapse-area
+        display: flex
+        width: 90%
+        margin: auto
+        margin-left: 0
+        flex-direction: column
+        .collapse
+            display: flex
+            flex-direction: column
+            margin: 2px auto 2px 20%
+            &-header
+                display: flex
+                height: 40px
+                width: 55%
+                min-width: 100px
+                border: 1px solid #168dcd
+                background: linear-gradient(90deg, #0498d8, #046db6)
+                border-radius: 4px
+                color: #ffffff
+                font-size: 16px
+                font-weight: 300
+                padding: 0 15px
+                cursor: pointer
+                position: relative
+                &::after
+                    content: ""
+                    position: absolute
+                    background-image: url("../../../assets/images/play_arrow-1.png")
+                    width: 20px
+                    left: -10%
+                    display: flex 
+                    margin: auto
+                    top: 50%
+                    height: 20px
+                    transform: translate(-50%, -50%)
+                &[aria-expanded=true]
+                    &::after
+                        transform: rotate(90deg) translate(-50%, 20%)              
+                p
+                    display: flex
+                    margin: auto 0
+                    cursor: pointer
+            &-body
+                display: none
+                ul
+                    list-style: none
+
+                    li
+                        display: flex
+                        color: #ffffff
+                        font-size: 14px
+                        font-weight: 300
+                        margin: 5px auto 
+                        cursor: pointer
+                        position: relative
+                        &::after
+                            content: ""
+                            position: absolute
+                            background-image: url("../../../assets/images/keyboard_arrow_right-1.png")
+                            width: 20px
+                            left: -10%
+                            top: 50%
+                            height: 20px
+                            transform: translate(-50%, -50%)
+            .collapse-sub[data-open=true]
+                padding: 0 15px
+                .collapse-body
+                    display: block
+
+

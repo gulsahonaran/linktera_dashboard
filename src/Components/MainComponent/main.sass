@@ -1,0 +1,203 @@
+
+.ul-style
+    list-style: none
+    display: flex
+    margin: auto
+    width: 100%
+    flex-direction: column
+    li
+        display: flex
+        width: 100%
+        margin: 5px auto
+        img
+            width: 70px
+            cursor: pointer
+        div
+            display: flex
+            flex-direction: column
+            justify-content: flex-start
+            margin: auto 5px
+            cursor: pointer
+            .name
+                color: #a8aaac
+                font-size: 18px
+                font-weight: bold
+            .email
+                color: #a8aaac
+                opacity: .6
+                font-size: 10px
+                font-weight: 300
+            .celebrate
+                color: #a8aaac
+                opacity: .6
+                font-size: 10px
+                font-weight: 900
+                position: relative
+                &::after
+                    content: ""
+                    position: absolute
+                    background-image: url("../../assets/images/send-icon.png")
+                    width: 25px
+                    right: 0
+                    display: flex 
+                    margin: auto
+                    top: 50%
+                    height: 25px
+                    transform: translate(0%, -50%) 
+        &:hover
+            transform: scale(1.01)
+.main-area
+    width: 85.53%
+    margin: 0 auto
+    display: flex
+    flex-wrap: wrap
+    &-inner, &-header
+        width: 83.15%
+        margin: 0 auto
+        display: flex
+    &-header
+        height: 120.5px
+    &-inner
+        height: calc(100% - 120.5px)
+        display: grid
+        grid-gap: 13px
+        grid-template-columns: repeat(auto-fit, minmax(9%, 1fr))
+        grid-auto-flow: dense
+        overflow: auto
+        .item
+            background: #ffffff
+            border-radius: 4px
+            h2
+                color: #294572
+                font-weight: bold
+                font-size: 18px
+                width: 100%
+            .see-more
+                display: flex
+                margin: auto
+                justify-content: flex-end
+                width: 100%
+                color: #294572
+                font-size: 12px
+                font-weight: 300
+                cursor: pointer
+                &:hover
+                    transform: scale(1.01)
+        .item-1
+            grid-column: span 6
+            grid-row: span 7
+            background: transparent
+            position: relative
+            h2
+                display: flex
+                position: absolute
+                top: 18px
+                left: 3px
+            img
+                display: flex
+                width: 100%
+            .next-slider
+                display: flex
+                position: absolute
+                top: 50%
+                right: 3px
+                transform: translate(0, -50%)
+                width: 23px
+                height: 35px
+                cursor: pointer
+                &:hover
+                    right: 0
+
+        .item-2
+            grid-column: span 2
+            grid-row: span 7
+            display: flex
+            flex-wrap: wrap
+            padding: 18px 10px
+            ul
+                @extend .ul-style
+                                                       
+        .item-3
+            grid-area: span 6 / span 2
+            display: flex
+        
+        .item-4
+            grid-column: span 2
+            grid-row: span 3
+            display: flex
+            flex-direction: column
+            padding: 20px
+            ul
+                background-color: #f3f3f3
+                padding: 2px
+                display: flex
+                flex-direction: column
+                margin: auto
+                li
+                    height: 55px
+                    display: flex
+                    margin: auto 0
+                    border-bottom: 1px solid #909090
+                    p
+                        display: flex
+                        margin: auto
+                        color: #a8aaac
+                        font-size: 16px
+                        font-weight: bold
+        
+        .item-5
+            grid-column: span 6
+            grid-row: span 4
+            display: flex
+            flex-wrap: wrap
+            padding: 18px 28px
+            > div
+                display: flex
+                margin: 5px 0
+                cursor: pointer
+                width: 50%
+                &:hover
+                    transform: scale(1.01)
+                div
+                    display: flex
+                    flex-direction: column
+                    margin: auto 10px
+                    p
+                        color: #a8aaac
+                        font-size: 16px
+                        font-weight: bold
+                        margin: auto auto 5px
+                    smal
+                        color: #a8aaac
+                        opacity: .6
+                        font-size: 12px
+                        font-weight: 300
+                
+        .item-6
+            grid-column: span 2
+            grid-row: span 4
+            display: flex
+            flex-wrap: wrap
+            padding: 18px 10px
+            ul
+                @extend .ul-style
+        
+        .item-7
+            grid-column: span 2
+            grid-row: span 5
+            display: flex
+            flex-wrap: wrap
+            padding: 18px 0
+            h2
+                text-indent: 10px
+            img
+                cursor: pointer
+                &:hover
+                    transform: scale(1.01)
+        
+        .item-8, .item-9, .item-10, .item-11
+            grid-column: span 2
+            grid-row: span 3
+            display: flex
+            flex-wrap: wrap
+            padding: 18px 10px
