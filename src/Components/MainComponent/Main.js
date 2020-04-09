@@ -31,14 +31,14 @@ class Main extends Component {
           <div className="main-area-inner">
               <div className="item item-1">
                 <h2>DUYURULAR</h2>
-                <img src={announcement}/>
-                <img className="next-slider" src={next}/>
+                <img src={announcement}  alt="announcement"/>
+                <img className="next-slider" src={next}  alt="next"/>
               </div>
               <div className="item item-2">
                 <h2>DOĞUM GÜNLERİ</h2>
                 <ul>
                   <li>
-                    <img src={userIcon}/>
+                    <img src={userIcon} alt="userAvatar"/>
                     <div>
                       <p className="name">Lorem Ipsum</p>
                       <small className="email">loremipsum@linktera.com.tr</small>
@@ -46,7 +46,7 @@ class Main extends Component {
                     </div>
                   </li>
                     <li>
-                      <img src={userIcon}/>
+                      <img src={userIcon} alt="userAvatar"/>
                       <div>
                         <p className="name">Lorem Ipsum</p>
                         <small className="email">loremipsum@linktera.com.tr</small>
@@ -54,7 +54,7 @@ class Main extends Component {
                       </div>
                     </li>
                   <li>
-                    <img src={userIcon}/>
+                    <img src={userIcon} alt="userAvatar"/>
                     <div>
                       <p className="name">Lorem Ipsum</p>
                       <small className="email">loremipsum@linktera.com.tr</small>
@@ -86,28 +86,28 @@ class Main extends Component {
               <div className="item item-5">
                 <h2>HABERLER</h2>
                 <div>
-                  <img src={new1}/>
+                  <img src={new1}  alt="new"/>
                   <div>
                     <p>Veri Analitiği Etkinliği</p>
                     <smal>Lorem ipsum dolor sit amet, consectetur adipiscing elit</smal>
                   </div>
                 </div>
                 <div>
-                  <img src={new2}/>
+                  <img src={new2} alt="new"/>
                   <div>
                     <p>Kış Sporları Kulübü Palandöken'de!</p>
                     <smal>Lorem ipsum dolor sit amet, consectetur adipiscing elit</smal>
                   </div>
                 </div>
                 <div>
-                  <img src={new3}/>
+                  <img src={new3}  alt="new"/>
                   <div>
                     <p>Yelken Kulübü Antremanda! </p>
                     <smal>Lorem ipsum dolor sit amet, consectetur adipiscing elit</smal>
                   </div>
                 </div>
                 <div>
-                  <img src={new4}/>
+                  <img src={new4} alt="new"/>
                   <div>
                     <p>Veri Analitiği Etkinliği</p>
                     <smal>Lorem ipsum dolor sit amet, consectetur adipiscing elit</smal>
@@ -121,7 +121,7 @@ class Main extends Component {
                 <h2>ARAMIZA KATILANLAR</h2>
                   <ul>
                     <li>
-                      <img src={userIcon}/>
+                      <img src={userIcon} alt="userAvatar"/>
                       <div>
                         <p className="name">Lorem Ipsum</p>
                         <small className="email">loremipsum@linktera.com.tr</small>
@@ -129,7 +129,7 @@ class Main extends Component {
                       </div>
                     </li>
                     <li>
-                      <img src={userIcon}/>
+                      <img src={userIcon} alt="userAvatar"/>
                       <div>
                         <p className="name">Lorem Ipsum</p>
                         <small className="email">loremipsum@linktera.com.tr</small>
@@ -137,7 +137,7 @@ class Main extends Component {
                       </div>
                     </li>
                     <li>
-                      <img src={userIcon}/>
+                      <img src={userIcon} alt="userAvatar"/>
                       <div>
                         <p className="name">Lorem Ipsum</p>
                         <small className="email">loremipsum@linktera.com.tr</small>
@@ -151,8 +151,8 @@ class Main extends Component {
               </div>
               <div className="item item-7">
                 <h2>İLANLAR</h2>
-                <img src={adv1}/>
-                <img src={adv2}/>
+                <img src={adv1} alt="adv"/>
+                <img src={adv2} alt="adv"/>
               </div>
               <div className="item item-8">
                 <h2>TELEFON REHBERİ</h2>
